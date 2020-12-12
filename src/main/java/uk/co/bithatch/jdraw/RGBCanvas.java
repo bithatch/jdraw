@@ -687,4 +687,10 @@ public class RGBCanvas {
 	public int getHeight() {
 		return backing.getHeight();
 	}
+
+	public void reset() {
+		translateX = translateY = 0;
+		gradient = null;
+		setColour(WHITE);
+	}
 }
